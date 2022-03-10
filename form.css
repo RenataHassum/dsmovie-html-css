@@ -38,13 +38,23 @@ header {
 	color: inherit;
 }
 
+.form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
 .form-item {
   background-color: var(--white);
-  padding: 20px 20px 0px 20px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: center; 
+}
+.form-container {
+   width: 480px;
+
 }
 
 
@@ -80,6 +90,7 @@ header {
 }
 .form-descricao {
   width: 100%;
+  padding: 20px 20px 0px 20px;
 }
 
 .form-descricao-group label {
@@ -91,4 +102,5 @@ header {
 .form-group {
   margin-bottom: 20px;
 } 
+
 

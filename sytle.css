@@ -3,6 +3,8 @@
 	--bg-menu: #4d41c0;
 	--white: #fff;
 	--text: #4a4a4a;
+	--star: #FFBB3A;
+
 }
 
 * {
@@ -43,7 +45,7 @@ header {
 
 .card-item {
 	background-color: var(--white);
-	min-height: 150px;
+	min-height: 200px;
 	width: 100%;
 	border-radius: 8px;
 	text-align: center;
@@ -75,6 +77,7 @@ header {
 	color: var(--text);
 	font-size: 0.875rem;
 	margin-bottom: 1rem;
+	font-weight: 700;
 }
 
 .card-descricao {
@@ -83,3 +86,18 @@ header {
 	flex-direction: column;
 	align-items: center;
 }
+
+.descricao-bottom img {
+  width: 22px;
+}
+.descricao-bottom h4 {
+	color: var(--star);
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+.descricao-bottom p {
+	font-size: 0.75rem;
+	margin-top: 5px;
+}
+
