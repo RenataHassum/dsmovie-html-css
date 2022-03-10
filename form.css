@@ -3,6 +3,7 @@
 	--bg-menu: #4d41c0;
 	--white: #fff;
 	--text: #4a4a4a;
+  --form: #aaa;
 }
 
 * {
@@ -37,26 +38,22 @@ header {
 	color: inherit;
 }
 
-.card-list {
-	padding-bottom: 20px;
+.form-item {
+  background-color: var(--white);
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
-.card-item {
-	background-color: var(--white);
-	min-height: 150px;
-	width: 100%;
-	border-radius: 8px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-}
-.card-item img {
+
+.form-item img {
 	width: 100%;
 	border-radius: 8px 8px 0px 0px;
 }
-.card-item a {
+.form-item a,
+.form-item button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -67,19 +64,31 @@ header {
 	text-decoration: none;
 	border-radius: 4px;
 	font-size: 0.875rem;
+  border: 0;
+  margin-bottom: 20px;
 }
-.card-item a:hover {
+.form-item a:hover {
 	color: var(--white);
 }
-.card-item h3 {
+.form-item h3 {
 	color: var(--text);
-	font-size: 0.875rem;
+	font-size: 0.82rem;
+  font-weight: 700;
 	margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.form-descricao {
+  width: 100%;
 }
 
-.card-descricao {
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.form-descricao-group label {
+  font-size: 0.75rem;
+  color: var(--form);
+  margin-bottom: 3px;
 }
+
+.form-group {
+  margin-bottom: 20px;
+} 
+
