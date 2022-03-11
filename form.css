@@ -1,6 +1,6 @@
 :root {
 	--bg: #ddd;
-	--bg-menu: #4d41c0;
+	--roxo: #4d41c0;
 	--white: #fff;
 	--text: #4a4a4a;
   --form: #aaa;
@@ -18,7 +18,10 @@ html body {
 }
 
 header {
-	background-color: var(--bg-menu);
+	background-color: var(--roxo);
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 .menu {
@@ -67,7 +70,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--bg-menu);
+	background-color: var(--roxo);
 	width: 180px;
 	height: 40px;
 	color: var(--white);
@@ -102,5 +105,6 @@ header {
 .form-group {
   margin-bottom: 20px;
 } 
+
 
 

@@ -21,9 +21,13 @@ html body {
 
 header {
 	background-color: var(--roxo);
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 .menu {
+
 	height: 3.75rem;
 	color: var(--white);
 	display: flex;
