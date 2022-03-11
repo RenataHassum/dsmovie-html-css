@@ -1,9 +1,10 @@
 :root {
 	--bg: #ddd;
-	--bg-menu: #4d41c0;
+	--roxo: #4d41c0;
 	--white: #fff;
 	--text: #4a4a4a;
 	--star: #FFBB3A;
+	--border-disable: #C2C2C2;
 
 }
 
@@ -19,7 +20,7 @@ html body {
 }
 
 header {
-	background-color: var(--bg-menu);
+	background-color: var(--roxo);
 }
 
 .menu {
@@ -45,7 +46,7 @@ header {
 
 .card-item {
 	background-color: var(--white);
-	min-height: 200px;
+	min-height: 190px;
 	width: 100%;
 	border-radius: 8px;
 	text-align: center;
@@ -62,7 +63,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--bg-menu);
+	background-color: var(--roxo);
 	width: 180px;
 	height: 40px;
 	color: var(--white);
@@ -76,7 +77,7 @@ header {
 .card-item h3 {
 	color: var(--text);
 	font-size: 0.875rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0.85rem;
 	font-weight: 700;
 }
 
@@ -100,4 +101,36 @@ header {
 	font-size: 0.75rem;
 	margin-top: 5px;
 }
+.paginacao-container {
+	padding: 15px 0px;
+	display: flex;
+	justify-content: center;
+}
+.paginacao-box {
+	display: flex;
+	width: 180px;
+	justify-content: space-between;
+	align-items: center;
+}
+.paginacao-box p {
+	margin-bottom: 0;
+	font-size: 00.75rem;
+	color: var(--roxo);
+}
+.paginacao-box button {
+	width: 40px;
+	height: 40px;
+	border: 1.2px solid var(--roxo);
+	background-color: var(--white);
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+}
+.paginacao-box button:disabled {
+	border: 1.2px solid var(--border-disable);
+}
+.flip-arrow {
+	transform: rotate(180deg);
+}
