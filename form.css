@@ -64,9 +64,9 @@ header {
 .form-item img {
 	width: 100%;
 	border-radius: 8px 8px 0px 0px;
+
 }
-.form-item a,
-.form-item button {
+.form-item a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -79,6 +79,9 @@ header {
 	font-size: 0.875rem;
   border: 0;
   margin-bottom: 20px;
+}
+.form-item a {
+	text-decoration: none;
 }
 .form-item a:hover {
 	color: var(--white);
